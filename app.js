@@ -5,7 +5,9 @@ const Postgres = require('./pg');
 const app = express();
 
 (async function () {
-  const db = new Postgres();
+  const db = new Postgres({
+    connectionString: process.env.POSTGRES_CONNECTION_URL,
+  });
   await db.init();
   const controller = new TodoController(db);
   controller.install(app);

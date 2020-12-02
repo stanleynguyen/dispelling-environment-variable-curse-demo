@@ -1,8 +1,9 @@
 const { Client } = require('pg');
 
-function Postgres() {
+function Postgres(opts) {
+  const { connectionString } = opts;
   const c = new Client({
-    connectionString: process.env.POSTGRES_CONNECTION_URL,
+    connectionString,
   });
   this.client = c;
   return this;
