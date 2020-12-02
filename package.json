@@ -1,0 +1,24 @@
+{
+  "name": "dispelling-environment-variable-curse-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stanleynguyen/dispelling-environment-variable-curse-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stanleynguyen/dispelling-environment-variable-curse-demo/issues"
+  },
+  "homepage": "https://github.com/stanleynguyen/dispelling-environment-variable-curse-demo#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.5.1"
+  }
+}
